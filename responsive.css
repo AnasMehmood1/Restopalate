@@ -1,0 +1,42 @@
+@media(max-width:900px){
+
+    .navbar{
+        flex-direction: row-reverse;
+        
+        
+    }
+
+    .menu-links{
+        background-color: #252525; 
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 5rem;
+        display: none;
+        justify-content: center;
+        align-items: center;
+        
+    
+    }
+    .nav-links{
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 80vh;
+        gap: 2rem;
+    }
+    .menu-links.active {
+        display: flex;
+    }
+
+    .hamburger{
+        display: block;
+        
+        
+    }
+    .hamburger.active{
+        position: absolute;
+        right: 2rem;
+    }
+}

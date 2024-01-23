@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Herr+Von+Muellerhoff&family=Source+Sans+3:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+.header{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.363),rgba(0, 0, 0, 0.514)), url("./images/hero-1.webp");
+    height: 100vh;
+    background-attachment: fixed;
+    background-size: cover;
+
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    padding: 0px 5rem;
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 90%;
+    z-index: 1000;
+    color: black;
+    background-color: white; /* Add your preferred background color for the sticky header */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Add a box shadow if desired */
+}
+.logo{
+    color: white;
+    font-size: 25px;
+    font-family: 'Source Sans 3', sans-serif;
+}
+.logo.active{
+    color: black;
+}
+.nav-links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    color: black;
+    text-decoration: none;
+}
+.nav-links a{
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    font-family: 'Source Sans 3', sans-serif;
+}
+.nav-links.active a {
+    color: black;
+}
+.nav-links a:active{
+    text-decoration: underline;
+    color: #C59D5F;
+}
+.nav-links a:hover{
+    text-decoration: underline;
+    color: #C59D5F;
+}
+.hamburger{
+    display: none;
+}
+
+.main-hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+    height: 90vh;
+    margin-top: -2rem;
+}
+.main-hero h1{
+    font-size: 160px;
+    font-weight: 400;
+    font-family: 'Herr Von Muellerhoff';
+    color: #C59D5F;
+    text-align: center;
+    line-height: 110px;
+}
+
+.main-hero h2{
+    font-size: 60px;
+    color: white;
+    font-family: 'Source Sans 3', sans-serif;
+}
+
+
+.line-container{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.left,
+.right{
+ width: 200px;
+ height: 2px;
+
+ background-color: white;
+}
+.mid{
+color: white;
+font-size: 20px;
+}
+.main-hero p{
+    color: white;
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 18px;
+    margin-bottom: 1rem;
+}
+.book{
+    padding: .9rem 1.5rem;
+    background-color: #374D6A;
+    color: white;
+    border-radius: 4px;
+    font-size: 18px;
+    border: none;
+    outline: none;
+}
+.order{
+    padding: .9rem 1.5rem;
+    background-color: #FFA833;
+    color: white;
+    border-radius: 4px;
+    font-size: 18px;
+    border: none;
+    outline: none;
+}
+.explore-container{
+    padding: 5rem 0px;
+}
+.menu-explore,
+.history-explore{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.menu-text,
+.history-text{
+    width: 40%;
+    text-align: center;
+}
+.menu-text h1,
+.history-text h1{
+    font-size: 160px;
+    font-weight: 400;
+    font-family: 'Herr Von Muellerhoff';
+    color: #C59D5F;
+    text-align: center;
+    line-height: 110px;
+    margin-bottom: -1rem;
+}
+.menu-text h2,
+.history-text h2{
+font-size: 45px;
+font-family: 'Source Sans 3', sans-serif;
+}
+.menu-text p,
+.history-text p{
+    font-family: 'Source Sans 3', sans-serif;
+    margin-bottom: 1rem;
+}
+.menu-text div{
+    text-align: left;
+}
+.menu-images,
+.history-images{
+    width: 45%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.menu-images img,
+.history-images img{
+    width: 270px;
+    height: 300px;
+    object-fit: cover;
+}
