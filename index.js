@@ -58,3 +58,26 @@ function Restaurent() {
 
 
 Restaurent();
+
+function contact() {
+    var navbar = document.querySelector(".navbar");
+    const logo = document.querySelector(".logo");
+    const navlink = document.querySelector(".nav-links");
+
+    var headerHeight = document.querySelector(".contact-header").offsetHeight;
+
+    window.addEventListener('scroll', () => {
+        if (window.scrollY >= headerHeight) {
+            logo.classList.add("active");
+            navlink.classList.add("active");
+            navbar.classList.add("sticky");
+        } else {
+            navbar.classList.remove('sticky');
+            logo.classList.remove("active");
+            navlink.classList.remove("active");
+        }
+    });
+}
+
+
+contact();
