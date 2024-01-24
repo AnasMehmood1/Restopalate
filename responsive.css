@@ -63,6 +63,15 @@
         right: 2rem;
     }
 }
+@media(max-width:750px){
+    .right-side,
+    .left-side{
+        width: 100%;
+    }
+    .contact-container{
+        flex-direction: column;
+    }
+}
 @media(max-width:600px){
     .menu-text,
     .history-text{
@@ -84,6 +93,15 @@
   .restaurent-bg h2{
     font-size: 30px;
   }
+  .right-side,
+.left-side{
+    width: 100%;
+}
+.main-hero h2{
+    font-size: 50px;
+    color: white;
+    font-family: 'Source Sans 3', sans-serif;
+}
   
 }
 @media(max-width:560px){
@@ -94,9 +112,29 @@
     .Menu-detail-container {
         width: 100%;
     }
+    .menu-text,
+.history-text{
+  width: 350px;
+  padding: 1rem 3rem;
+ text-align: center;
+  margin-top: 3rem;
+}
+.ready-image h1{
+    font-size: 120px;
+}
  
     .left-menu,
   .right-menu {
     width: 400px;
   }
+  .left,
+.right{
+ width: 150px;
+ height: 2px;
+
+ background-color: white;
+}
+.open{
+    font-size: 30px;
+}
 }
