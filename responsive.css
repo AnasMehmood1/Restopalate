@@ -1,3 +1,27 @@
+
+@media(max-width:1300px){
+    .Menu-detail-container {
+        gap: 0rem;
+    }
+    .left-menu,
+    .right-menu {
+      width: 700px;
+    }
+}
+@media(max-width:1150px){
+    .Menu-detail-container {
+        flex-wrap: wrap;
+    }
+    .left-menu,
+    .right-menu {
+      width:750px;
+      padding: 2rem;
+    }
+}
+
+
+
+
 @media(max-width:900px){
 
     .navbar{
@@ -48,12 +72,31 @@
         width: 100%;
     }
     .left-detail{
-       
         width: 300;
     }
     .left-menu,
   .right-menu {
     width: 600px;
   }
+  .restaurent-bg h1{
+    font-size: 100px;
+  }
+  .restaurent-bg h2{
+    font-size: 30px;
+  }
   
+}
+@media(max-width:560px){
+    .Menu-detail-container {
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .Menu-detail-container {
+        width: 100%;
+    }
+ 
+    .left-menu,
+  .right-menu {
+    width: 400px;
+  }
 }
