@@ -3,7 +3,6 @@
     .navbar{
         flex-direction: row-reverse;
         
-        
     }
 
     .menu-links{
@@ -39,4 +38,22 @@
         position: absolute;
         right: 2rem;
     }
+}
+@media(max-width:600px){
+    .menu-text,
+    .history-text{
+        width: 400px;
+    }
+    .Menu-detail-container {
+        width: 100%;
+    }
+    .left-detail{
+       
+        width: 300;
+    }
+    .left-menu,
+  .right-menu {
+    width: 600px;
+  }
+  
 }

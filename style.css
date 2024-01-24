@@ -10,23 +10,29 @@
     height: 100vh;
     background-attachment: fixed;
     background-size: cover;
-
+    width: 100%;
+   
 }
 .navbar{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    height: 10vh;
-    padding: 0px 5rem;
+    height: 12vh;
+    /* padding: 0px 3rem; */
+    width: 100%;
+    /* position: fixed;
+    top: 0; */
+
 }
 .sticky {
     position: fixed;
     top: 0;
-    width: 90%;
+    width: 100%;
     z-index: 1000;
     color: black;
     background-color: white; /* Add your preferred background color for the sticky header */
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Add a box shadow if desired */
+   
 }
 .logo{
     color: white;
@@ -42,7 +48,7 @@
     align-items: center;
     gap: 1.5rem;
     color: black;
-    text-decoration: none;
+  
 }
 .nav-links a{
     text-decoration: none;
@@ -52,6 +58,9 @@
 }
 .nav-links.active a {
     color: black;
+}
+li{
+    list-style: none;
 }
 .nav-links a:active{
     text-decoration: underline;
@@ -64,7 +73,9 @@
 .hamburger{
     display: none;
 }
-
+.hero-content{
+    z-index: 1;
+}
 .main-hero{
     display: flex;
     justify-content: center;
@@ -72,7 +83,7 @@
     width: 100%;
     flex-direction: column;
     height: 90vh;
-    margin-top: -2rem;
+    padding-top: 4rem;
 }
 .main-hero h1{
     font-size: 160px;
@@ -130,53 +141,218 @@ font-size: 20px;
     border: none;
     outline: none;
 }
+
 .explore-container{
-    padding: 5rem 0px;
+ padding: 2rem 0px;
 }
 .menu-explore,
 .history-explore{
     display: flex;
     justify-content: center;
     width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.col-1{
+
+    gap: 3rem;
+    flex-wrap: wrap;
 }
 .menu-text,
 .history-text{
-    width: 40%;
-    text-align: center;
+  width: 600px;
+  padding: 1rem 3rem;
+ text-align: center;
+  margin-top: 3rem;
 }
 .menu-text h1,
 .history-text h1{
     font-size: 160px;
-    font-weight: 400;
     font-family: 'Herr Von Muellerhoff';
     color: #C59D5F;
-    text-align: center;
-    line-height: 110px;
-    margin-bottom: -1rem;
+    line-height: 100px;
 }
 .menu-text h2,
 .history-text h2{
-font-size: 45px;
-font-family: 'Source Sans 3', sans-serif;
+    font-size: 45px;
+    font-family: 'Source Sans 3', sans-serif;
 }
 .menu-text p,
 .history-text p{
     font-family: 'Source Sans 3', sans-serif;
     margin-bottom: 1rem;
 }
+.images{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+.images div{
+    gap: 1rem;
+}
 .menu-text div{
     text-align: left;
 }
-.menu-images,
-.history-images{
-    width: 45%;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
+.find{
+    text-align: left;
 }
-.menu-images img,
-.history-images img{
-    width: 270px;
+.find span{
+    text-decoration: underline;
+    color: #C59D5F;
+}
+.images div img{
+    width: 250px;
     height: 300px;
     object-fit: cover;
 }
+.ready-container{
+    text-align: center;
+
+}
+.ready-image{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.363),rgba(0, 0, 0, 0.514)), url("./images/ready.webp");
+    padding: 8rem 0px;
+    text-align: center;
+    background-attachment: fixed;
+    margin-bottom: 2rem;
+}
+.ready-image h1{
+    font-size: 140px;
+    font-family: 'Herr Von Muellerhoff';
+    color: #C59D5F;
+    line-height: 110px;
+   
+}
+.ready-image h2{
+    font-size: 45px;
+    font-family: 'Source Sans 3', sans-serif;
+    color: white;
+}
+.open{
+    font-size: 45px;
+    font-family: 'Source Sans 3', sans-serif;
+    margin-top: 2rem;
+}
+.list li{
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 17px;
+     margin-bottom: 1rem;
+}
+.list p{
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 17px;
+}
+.list h2{
+     font-weight: 400;
+     font-family: 'Source Sans 3', sans-serif;
+     margin-top: 1rem;
+}
+.link{
+    margin-top: 4rem;
+}
+.first a,
+.second a,
+.third a{
+    color: #C59D5F;
+}
+.footer{
+    background: #252525;
+    height: 40vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    font-family: 'Source Sans 3', sans-serif;
+    color: gray;
+    margin-top: 5rem;
+}
+.cr{
+    font-size: 40px;
+}
+.item{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height: 20px;
+    gap: 1rem;
+    font-family: 'Source Sans 3', sans-serif;
+    list-style: none;
+}
+
+
+
+/* ----------------restaurent page --------------- */
+
+
+.restaurent-header{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.363),rgba(0, 0, 0, 0.514)), url("./images/hero-1.webp");
+    height: 60vh;
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+}
+.restaurent-main-hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+    height: 50vh;
+   padding-top:1rem;
+}
+.restaurent-main-hero h1{
+    font-size: 160px;
+    font-weight: 400;
+    font-family: 'Herr Von Muellerhoff';
+    color: #C59D5F;
+    text-align: center;
+    line-height: 110px;
+}
+
+.restaurent-main-hero h2{
+    font-size:50px;
+    color: white;
+    font-family: 'Source Sans 3', sans-serif;
+}
+.line{
+    margin-left: 2rem;
+    line-height:30px;
+    font-family: 'Source Sans 3', sans-serif;
+} 
+.btn{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-left: 3rem;
+    
+    padding: 2rem 0px;
+    width: 60%;
+}
+
+.Menu-detail-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+    width: 100%;
+    gap: 1rem;
+  }
+  
+  .left-menu,
+  .right-menu {
+    width: 700px;
+  }
+  .menu{
+    padding: .5rem 0px;
+    font-family: 'Source Sans 3', sans-serif;
+  }
+  .right-detail h1{
+  font-weight: 400;
+  font-family: 'Source Sans 3', sans-serif;
+  }
+  
+  
