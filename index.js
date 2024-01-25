@@ -71,12 +71,15 @@ function header() {
     window.addEventListener('scroll', () => {
         if (window.scrollY >= headerHeight) {
             logo.classList.add("active");
+          
+           
             navlink.classList.add("active");
             navbar.classList.add("sticky");
         } else {
             navbar.classList.remove('sticky');
             logo.classList.remove("active");
             navlink.classList.remove("active");
+           
         }
     });
 }

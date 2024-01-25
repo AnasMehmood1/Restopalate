@@ -105,6 +105,18 @@
   
 }
 @media(max-width:560px){
+    .logo{
+        font-size: 20px;
+        text-align: center;
+    }
+    .main-hero h1{
+        font-size: 140px;
+        font-weight: 400;
+        font-family: 'Herr Von Muellerhoff';
+        color: #C59D5F;
+        text-align: center;
+        line-height: 110px;
+    }
     .Menu-detail-container {
         flex-wrap: wrap;
         align-items: center;
