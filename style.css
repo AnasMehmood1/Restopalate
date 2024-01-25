@@ -46,6 +46,10 @@ h2{
     font-size: 25px;
     font-family: 'Source Sans 3', sans-serif;
 }
+.logo a{
+    color: white;
+    text-decoration: none;
+}
 .logo.active{
     color: black;
 }
@@ -506,4 +510,33 @@ font-family: 'Source Sans 3', sans-serif;
 .map{
     margin-top: 2rem;
     margin-bottom: -2.2rem;
+}
+
+
+.circle{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    right: 3%;
+    top: 60%;
+    
+
+}
+.circle-dot{
+    width: 12px;
+    display: inline-block;
+    height: 12px;
+    border-radius: 50%;
+    border: 2px solid gray;
+    background-color: transparent;
+}
+.circle-dot.filled {
+    background-color: black;
+    border: none;
+    width: 12px;
+    display: inline-block;
+    height: 12px;
+    border: 2px solid black;
+    border-radius: 50%;
 }

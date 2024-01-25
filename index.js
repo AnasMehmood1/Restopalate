@@ -1,3 +1,50 @@
+const circleDots = document.querySelectorAll('.circle-dot');
+const sections = document.querySelectorAll('.section');
+
+const handleScroll = () => {
+    const scrollPosition = window.scrollY;
+    
+    sections.forEach((section, index) => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.clientHeight;
+        const triggerPosition = sectionTop + sectionHeight / 2;
+
+        if (scrollPosition >= triggerPosition) {
+            circleDots.forEach((dot, dotIndex) => {
+                dot.classList.remove('filled');
+                if (dotIndex === index) {
+                    dot.classList.add('filled');
+                }
+            });
+        }
+    });
+};
+
+const handleDotClick = (index) => {
+    const section = sections[index];
+    const sectionTop = section.offsetTop;
+    
+    window.scrollTo({
+        top: sectionTop,
+        behavior: 'smooth'
+    });
+};
+
+window.addEventListener('scroll', handleScroll);
+
+circleDots.forEach((dot, index) => {
+    dot.addEventListener('click', () => handleDotClick(index));
+});
+
+handleScroll();
+
+
+
+
+
+
+
+
 const hamburger = document.querySelector(".hamburger");
 const menu = document.querySelector(".menu-links");
 
@@ -81,3 +128,10 @@ function contact() {
 
 
 contact();
+
+
+
+
+
+
+
