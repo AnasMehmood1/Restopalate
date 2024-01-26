@@ -63,7 +63,7 @@ h2{
     font-family: 'Source Sans 3', sans-serif;
 }
 .nav-links.active a {
-    color: white;
+    color: black;
 }
 li{
     list-style: none;
@@ -528,6 +528,7 @@ font-family: 'Source Sans 3', sans-serif;
    right: 5%;
     top: 50%;
     transform: translateY(-50%);
+    z-index: 1000;
 }
 
 .circle-dot {
@@ -535,7 +536,6 @@ font-family: 'Source Sans 3', sans-serif;
     height: 12px;
     border-radius: 50%;
     border: 2px solid gray;
-    background-color: transparent;
 }
 
 .circle-dot.filled {
