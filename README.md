@@ -17,7 +17,7 @@ Welcome to   Restopalate- Your Ultimate Destination for Delicious Food!
 - **Desserts:** Indulge in our sweet and satisfying dessert options.
 - **Beverages:** Complement your meal with refreshing beverage choices.
 
-## Why Choose [Your Restaurant Name]?
+## Why Choose Restopalate?
 
 - **Culinary Excellence:** Our chefs are dedicated to delivering a delightful culinary experience.
 - **Online Ordering:** Conveniently place your order online with just a few clicks.
@@ -27,16 +27,13 @@ Welcome to   Restopalate- Your Ultimate Destination for Delicious Food!
 ## Project Features
 
 - **Menu Display:** Browse through our diverse menu categories.
-- **History Section:** Learn about the rich history and journey of [Your Restaurant Name].
+- **History Section:** Learn about the rich history and journey of Restopalate
 - **Contact Details:** Find our contact information for inquiries and reservations.
 
- ## Live Preview 
-  
-  Click here for live https://restopalate.netlify.app/
 
 ## Getting Started
 
-1. Visit our restaurant website: [Your Restaurant Website Link]
+1. Visit our restaurant website:https://restopalate.netlify.app/
 2. Explore our menu, history, and contact details.
 
 ## Contributing
